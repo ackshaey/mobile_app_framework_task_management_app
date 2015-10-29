@@ -3,9 +3,13 @@
              SeparateXMLFiles="false" Package="mobile" ClientType="Generic">
   <pageMap>
     <page path="/TodoList.amx" usageId="mobile_TodoListPageDef"/>
+    <page path="/projectTasksList.amx" usageId="mobile_projectTasksListPageDef"/>
+    <page path="/todoTasksList.amx" usageId="mobile_todoTasksListPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="mobile_TodoListPageDef" path="mobile.pageDefs.TodoListPageDef"/>
+    <page id="mobile_projectTasksListPageDef" path="mobile.pageDefs.projectTasksListPageDef"/>
+    <page id="mobile_todoTasksListPageDef" path="mobile.pageDefs.todoTasksListPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <dc id="TodoTasks" path="mobile.TodoTasks"/>

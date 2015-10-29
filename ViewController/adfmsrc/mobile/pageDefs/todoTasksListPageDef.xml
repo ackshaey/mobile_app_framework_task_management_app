@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1" id="todoTasksListPageDef"
+                Package="mobile.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="TodoTasks" id="TodoTasksIterator"/>
+    <accessorIterator MasterBinding="TodoTasksIterator" Binds="sampleTasks" RangeSize="25" DataControl="TodoTasks"
+                      BeanClass="mobile.TodoTask" id="sampleTasksIterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="sampleTasksIterator" id="sampleTasks">
+      <nodeDefinition DefName="mobile.TodoTask" Name="sampleTasks0">
+        <AttrNames>
+          <Item Value="taskName"/>
+          <Item Value="startDate"/>
+          <Item Value="percentComplete"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>
