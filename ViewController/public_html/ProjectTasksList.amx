@@ -14,7 +14,8 @@
         <amx:tableLayout width="100%" id="tl1">
           <amx:rowLayout id="rl2">
             <amx:cellFormat width="40px" halign="center" rowSpan="2" id="cf5">
-              <dvtm:statusMeterGauge id="statusMeterGauge1" orientation="circular" value="#{row.percentComplete}">
+              <dvtm:statusMeterGauge id="statusMeterGauge1" orientation="circular" value="#{row.percentComplete}"
+                                     borderColor="Teal" color="Teal" inlineStyle="color:Teal;">
                 <dvtm:metricLabel id="ml1" textType="percent" rendered="true" labelStyle="font-size:8px;"/>
                 <dvtm:threshold id="t1"/>
               </dvtm:statusMeterGauge>

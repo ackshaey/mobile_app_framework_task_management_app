@@ -1,0 +1,42 @@
+<References xmlns="http://xmlns.oracle.com/adf/jndi">
+  <Reference name="Oracle SSO" className="oracle.adf.model.connection.adfmf.LoginConnection"
+             adfCredentialStoreKey="Oracle SSO" partial="false" manageInOracleEnterpriseManager="true" deployable="true"
+             xmlns="">
+    <Factory className="oracle.adf.model.connection.adfmf.LoginConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="adfmfLogin">
+        <Contents>
+          <login url="https://slcai832.us.oracle.com:10606/projectsManagement/rest/v1/resources"/>
+          <logout url="https://slcai832.us.oracle.com:10606/projectsManagement/rest/v1/resources"/>
+          <authenticationMode value="hybrid"/>
+          <idleTimeout value="300"/>
+          <sessionTimeout value="28800"/>
+          <maxFailuresBeforeCredentialCleared value="3"/>
+          <rememberCredentials>
+            <enableRememberUserName value="true"/>
+            <rememberUserNameDefault value="true"/>
+            <enableRememberPassword value="true"/>
+            <rememberPasswordDefault value="true"/>
+            <enableStayLoggedIn value="true"/>
+            <stayLoggedInDefault value="true"/>
+          </rememberCredentials>
+          <accessControl/>
+          <userObjectFilter/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+  <Reference name="Login Basic Auth TAP Rest V1" className="oracle.adf.model.connection.adfmf.LoginConnection"
+             adfCredentialStoreKey="Login Basic Auth TAP Rest V1" partial="false" manageInOracleEnterpriseManager="true"
+             deployable="true" xmlns="">
+    <Factory className="oracle.adf.model.connection.adfmf.LoginConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="adfmfLogin">
+        <Contents>
+          <accessControl/>
+          <userObjectFilter/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+</References>

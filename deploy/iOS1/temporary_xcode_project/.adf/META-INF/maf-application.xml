@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <adfmf:application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf"
-                   version="1.0" name="PPMMobile" id="com.company.PPMMobile"
+                   version="1.0" name="PPM Cloud Mobile" id="com.company.PPMMobile"
                    appControllerFolder="ApplicationController" listener-class="application.LifeCycleListenerImpl">
   <adfmf:featureReference refId="todoTasksFeature" id="fr1" showOnNavigationBar="false"/>
   <adfmf:featureReference refId="projectTasksFeature" id="fr2" showOnNavigationBar="false"/>
+  <adfmf:preferences/>
   <adfmf:navigation>
     <adfmf:navigationBar enabled="false"/>
-    <adfmf:springboard enabled="true" width="180"/>
+    <adfmf:springboard enabled="true" width="230" showSpringboardAtStartup="false"
+                       displayGotoSpringboardControl="true"/>
   </adfmf:navigation>
+  <adfmf:login/>
 </adfmf:application>

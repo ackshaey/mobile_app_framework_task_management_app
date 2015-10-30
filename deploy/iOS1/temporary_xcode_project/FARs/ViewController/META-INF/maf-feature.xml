@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <adfmf:features xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf">
-  <adfmf:feature id="todoTasksFeature" name="Todo Tasks" image="assets/icon_todo.png">
+  <adfmf:feature id="todoTasksFeature" name="Todo Tasks" image="assets/icon_todo.png" securityEnabled="true">
     <adfmf:content id="todoTasksFeature.1" image="assets/icon_todo.png">
       <adfmf:amx file="todoTasksFeature/todoTasksFeature-task-flow.xml#todoTasksFeature-task-flow"/>
     </adfmf:content>
   </adfmf:feature>
-  <adfmf:feature id="projectTasksFeature" name="Project Tasks" image="assets/icon_projects.png">
+  <adfmf:feature id="projectTasksFeature" name="Project Tasks" image="assets/icon_projects.png" securityEnabled="true">
     <adfmf:content id="projectTasksFeature.1" image="assets/icon_projects.png">
       <adfmf:amx file="projectTasksFeature/projectTasks-task-flow.xml#projectTasks-task-flow"/>
     </adfmf:content>
