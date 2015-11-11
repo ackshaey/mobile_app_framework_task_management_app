@@ -1,1 +1,0 @@
-l={SA:["SA","Ameryka Po\u0142udniowa"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["southAmerica","continent",l]);

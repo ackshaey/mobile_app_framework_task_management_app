@@ -1,1 +1,0 @@
-l={KOR_SEOUL:[null,"Seul"],IND_NEW_DELHI:[null,"Nuova Delhi"],MAC_MACAU:[null,"Macao"],IDN_JAKARTA:[null,"Giacarta"],CHN_BEIJING:[null,"Pechino"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["apac","cities",l]);

@@ -1,1 +1,0 @@
-l={BRA_SAO_PAULO:[null,"S\u00e3o Paulo"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["latinAmerica","cities",l]);

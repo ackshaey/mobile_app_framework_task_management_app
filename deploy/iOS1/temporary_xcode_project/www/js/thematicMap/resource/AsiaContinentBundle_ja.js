@@ -1,1 +1,0 @@
-l={AS:["AS","\u30a2\u30b8\u30a2"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["asia","continent",l]);

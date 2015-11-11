@@ -1,1 +1,0 @@
-l={CA_ANTIOCH:[null,"Antiohia"],GA_ATHENS:[null,"Atena"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["usa","cities",l]);

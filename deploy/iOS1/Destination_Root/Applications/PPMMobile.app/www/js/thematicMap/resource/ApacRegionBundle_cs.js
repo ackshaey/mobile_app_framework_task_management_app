@@ -1,1 +1,0 @@
-l={APAC:["APAC","Asie a Tichomo\u0159\u00ed"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["apac","region",l]);

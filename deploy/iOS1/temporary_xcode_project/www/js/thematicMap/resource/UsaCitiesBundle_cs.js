@@ -1,1 +1,0 @@
-l={PA_PHILADELPHIA:[null,"Filadelfie"],VA_ALEXANDRIA:[null,"Alexandrie"],FL_ST__PETERSBURG:[null,"St. Pet\u011brburg"],GA_ATHENS:[null,"At\u00e9ny"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["usa","cities",l]);

@@ -1,1 +1,0 @@
-l={NA:["NA","\u5317\u7f8e\u6d32"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["northAmerica","continent",l]);

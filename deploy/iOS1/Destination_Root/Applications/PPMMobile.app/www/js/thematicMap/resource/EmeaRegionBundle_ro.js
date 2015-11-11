@@ -1,1 +1,0 @@
-l={EMEA:["EMEA","Europa, Orientul Mijlociu \u015fi Africa"]};(this?this:window).DvtBaseMapManager._UNPROCESSED_MAPS[2].push(["emea","region",l]);
