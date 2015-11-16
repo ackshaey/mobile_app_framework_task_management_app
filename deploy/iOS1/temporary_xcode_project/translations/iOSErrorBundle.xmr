@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<messages xmlns:ns2="http://www.example.org/messages">
+    <component number="20001">
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16000</number>
+            <text>ERROR: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ERROR</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A generic error occurred prefix.  See the text in the error for more details.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16002</number>
+            <text>Invalid Use</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_INVALID_USE_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Used as the title for an exception when a method that must run of the main thread has been called on the main thread.  Can also be used as the title in the case where a method required to run on the main thread has not been called on the main thread.</cause>
+                <action>See the error message for more details on altering the type of thread the method is called on.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16004</number>
+            <text>This function must NOT be called on the main thread.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_REQUIRES_NON_MAIN_THREAD</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A method that must NOT be called on the main thread has been called on the main thread.</cause>
+                <action>Alter your use of the method to call the method off the main thread.</action>
+            </causes>
+        </message>        
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16022</number>
+            <text>Invalid Argument</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_INVALID_ARGUMENT_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Used as a title for an error when an invalid argument is passed into a method.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16023</number>
+            <text>A nil package name was passed to [oraADFLogger getLogger:].</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_REQUIRES_NIL_PACKAGE_NAME</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A nil package name was passed into the get logger call.</cause>
+                <action>Pass a non nil string into the call.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16025</number>
+            <text>Property name cannot be nil.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_NAME_PROPERTY_CANNOT_BE_NIL</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A nil key was passed into a get value call when requesting a value for the adf-config.xml file.</cause>
+                <action>Pass a non nil key name into the call.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16027</number>
+            <text>Missing classname.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_INVALID_ARGUMENT_MISSING_CLASSNAME</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A call to one of the Container Utilities invoke calls is missing a classname.</cause>
+                <action>Pass a classname to the invoke call.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16028</number>
+            <text>Missing method.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_INVALID_ARGUMENT_MISSING_METHOD</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A call to one of the Container Utilities invoke calls is missing a method name.</cause>
+                <action>Pass a method name to the invoke call.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16032</number>
+            <text>Unexpected Response</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_Unexpected_Response_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Used as a general title in a situation where an unexpected response was encountered.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16033</number>
+            <text>CVM Response returned a nil response. </text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_CVM_NIL_RESPONSE_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The CVM return a nil response message.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16034</number>
+            <text>CVM Response returned a nil FeatureContextAccessor.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_CVM_NIL_FeatureContextAccessor</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The feature context accessor returned by a CVM call was nil.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16035</number>
+            <text>JS Response returned a nil response.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_CVM_NIL_JS_RESPONSE_NIL</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The framework return from the a call to JavaScript was nil.  Even if the JavaScript did not have a return that information should have been returned in a response.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16036</number>
+            <text>Cannot send JavaScript calls to the channel '%@' that does not have a webview.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_CVM_NO_JS_TO_CONTROL_CHANNEL</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A JavaScript call was made on the control channel or a channel that does not yet have a webview.  There is no associated web view so this request cannot be fulfilled.</cause>
+                <action>Make the JavaScript call using your featureId and that feature has been activated.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16074</number>
+            <text>Invalid Message</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_INVALID_MSG_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An invalid message was found.  See the error message for more details.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16075</number>
+            <text>Unknown Message Type specified by message.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_INVALID_MSG_TYPE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A low level ADF Message type other than 10000 was encountered.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16092</number>
+            <text>Malformed Message</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_MALFORMED_MESSAGE_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A message was sent to the native framework from the CVM and it did not have the proper format.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16093</number>
+            <text>Empty request message is not allowed.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_MALFORMED_MESSAGE_EMP_NOT_ALLOWED</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A VM Message was sent to the native framework from the CVM which resulted in a nil ADF Message.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16094</number>
+            <text>Unsupported Message</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_UNSUPPORTED_MESSAGE_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An invalid message was sent to the native framework from the CVM.  See the message for more details.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16095</number>
+            <text>System messages are not supported on this channel</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_UNSUPPORTED_MESSAGE_SYS_MSG_ON_CHNL</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A system message was sent to the native framework from the CVM on a channel that does not have a system message handler.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16096</number>
+            <text>Invalid system request %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_INVLD_SYS_REQ</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A system message was sent to the native framework from the CVM but resulted in a non-AdfSystemRequest ADF Message.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16097</number>
+            <text>Application messages are not supported on this channel</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_UNSUPPORTED_MESSAGE_APP_MSG_ON_CHNL</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An application message was sent to the native framework from the CVM on a channel that does not have an application message handler.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16098</number>
+            <text>Invalid application request %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_INVLD_APP_REQ</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An application message was sent to the native framework from the CVM but resulted in a non-AdfApplicationRequest ADF Message.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16099</number>
+            <text>Unhandled Message</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_UNHANDLED_MESSAGE_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A message was sent to the native framework from the CVM but resulted in a non-application and non-system ADF Message.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16100</number>
+            <text>UnhandledAdfMessage - ReferenceId: %d Type: %d Body: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_UNHANDLED_MESSAGE_INFO</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A message was sent to the native framework from the CVM but resulted in a non-application and non-system ADF Message.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16101</number>
+            <text>Received an unsolicited response message</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_UNSOLICITATED_RESPONSE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A response message was sent to the native framework from the CVM but there was no recorded request expecting the response.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16102</number>
+            <text>Received an unknown message type</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_UNKNWN_MSG_TYP</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A message was sent to the native framework from the CVM abd resulted in a non-request and a non-response message.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16103</number>
+            <text>AdfChannel.handle - Error handling the VMChannel message: %@ - ERROR: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADFCHANNEL_ERROR_HNDL_MSG</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An exception occurred while processing a message sent to the native framework from the CVM.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16113</number>
+            <text>Attachment %@ was not found or could not be read</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_AdfMobilePhoneGapMessaging_ATTACHMENT_NOT_FOUND</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>During the attempt to send out an e-mail, the attachments specified could not be found at the specified location on the device.</cause>
+                <action>Ensure you have passed in the correct location for the file to be attached.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16115</number>
+            <text>%@ is not defined in the webview for feature %@. JavaScript result call aborted.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_UIWEBVIEW_FN_NOT_DFN_CALL_ABORTED</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>While trying to deliver a response JSON message to a UIWebView it was discovered the response handler JavaScript functions do not exist.</cause>
+                <action>During normal use this should not happen. Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16116</number>
+            <text>There was a problem calling the function &#39;%@&#39; in feature %@.  Returned value: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_UIWEBVIEW_PRBLM_CALLING_FN</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An unexpected response was received while delivering a JSON response to a UIWebView JavaScript.</cause>
+                <action>During normal use this should not happen. Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16133</number>
+            <text>Show Feature Failed</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_Show_Feature_Failed</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An exception occurred during the show of a feature.  See the message for more details.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16134</number>
+            <text>Could not show feature.  Attempt to show feature &#39;%@&#39; failed.  ERROR: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_Could_NOT_Show_Feature</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An exception occurred during the show of a feature.  The message should have more details about the failure.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16142</number>
+            <text>Cannot Send Message</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_CANNOT_SEND_SMS_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Title indicating an SMS message could not be sent.</cause>
+                <action>Ensure you have access to SMS and it is properly configured.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16143</number>
+            <text>Unable to send message as text messaging is not available on this device.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_SMS_SERVICE_UNAVAILABLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An error indicating an SMS message could not be sent.</cause>
+                <action>Ensure you have access to SMS and it is properly configured.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16144</number>
+            <text>Unable to send message as unable to get text message composer.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_UNABLE_TO_GET_SMS_COMPOSER</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An error indicating an SMS message could not be sent.</cause>
+                <action>Ensure you have access to SMS and it is properly configured.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16145</number>
+            <text>AdfGenericInvokeHandler.processRequest - The &#39;classname&#39; was not specified</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_CLASSNAME_MISSING</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name was not provided to the native container invoke method.</cause>
+                <action>Include the classname for the object type you want to call.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16146</number>
+            <text>adfGenericInvokeHandler.processRequest - The morphClassName call caused an ERROR: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_MORPH_CLASSNAME_FAILED</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name provided to the native container invoke method could not be morphed into an Objective-C class name.</cause>
+                <action>Ensure the class name you have provided is valid.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16147</number>
+            <text>AdfGenericInvokeHandler.processRequest - The &#39;classname&#39; morphClassName failed.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_MORPH_CLASSNAME_NIL</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name provided to the native container invoke method could not be morphed into an Objective-C class name.</cause>
+                <action>Ensure the class name you have provided is valid.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16148</number>
+            <text>AdfGenericInvokeHandler.processRequest - The &#39;method&#39; was not specified</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_METHOD_MISSING</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The method name was not provided to the native container invoke method.</cause>
+                <action>Ensure the method name is provided.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16149</number>
+            <text>Could not create class: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_COULD_NOT_CREATE_CLASS</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name provided to the native container invoke method did not result in an Objective-C class.</cause>
+                <action>Ensure the class name you have provided is valid.  Ensure the libraries your class is in have been linked into the application.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16150</number>
+            <text>Requested class to be invoked could not be created: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_NEW_FAILED</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name provided to the native container invoke method resulted in an Objective-C class that was found but could not be created.</cause>
+                <action>Ensure the class name you have provided is valid.  Ensure the libraries your class is in have been linked into the application.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16151</number>
+            <text>Instance of %@ class does not respond to &#39;%@&#39; selector.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_SELECTOR_MISSING</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name provided to the native container invoke method result in an Objective-C class that does not support the method name requested.</cause>
+                <action>Ensure the class name you have provided is valid and has a selector that has a single parameter.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16152</number>
+            <text>Invoking &#39;%@&#39; caused error: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_INVOKE_ERROR</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name provided to the native container invoke method result in an Objective-C class that generated an error during the invoke of the requested method.</cause>
+                <action>Ensure the class name you have provided is valid and has a selector that has a single parameter and that method does not throw and exception.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16153</number>
+            <text>Serializing result from &#39;%@&#39; on %@ type caused ERROR: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_SERIALIZE_ERROR</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name provided to the native container invoke method result in an Objective-C class that returned an object that could not be serialized to JSON.</cause>
+                <action>Ensure the class/method name returns a JSON serializable object such as an NSDictionary or NSArray.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16154</number>
+            <text>Serializing result from &#39;%@&#39; on %@ type generated nil.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_SERIALIZED_TO_NIL</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The class name provided to the native container invoke method result in an Objective-C class that returned an object that could not be serialized to JSON.</cause>
+                <action>Ensure the class/method name returns a JSON serializable object such as a non-nil NSDictionary or NSArray.</action>
+            </causes>
+        </message>
+
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16156</number>
+            <text>credentialStoreKey for connection cannot be nil</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_CREDENTIAL_STORE_KEY_NIL_NOARGS</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Incorrect security configuration, see your admin.</cause>
+                <action>Check connections.xml and ensure that adfCredentialStoreKey attribute exists inside the Reference element for all connections</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16189</number>
+            <text>Logout</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_LOGOUT</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Title for a shutdown notification due to logout.</cause>
+                <action>No action.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16203</number>
+            <text>File not found: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_DISPLAY_FILE_FILE_NOT_FOUND_DESCRIPTION</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The URL was not pointing to an existing file.</cause>
+                <action>Please provide a URL that points to an existing file.</action>
+            </causes>
+        </message>        
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16204</number>
+            <text>The email message was not saved or queued, possibly due to an error.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_MAIL_RESULT_FAILED</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Network or configuration error.</cause>
+                <action>Verify the device is connected to the network and that at least one e-mail account is properly configured.</action>
+            </causes>
+        </message>        
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16205</number>
+            <text>An error occurred trying to save the email message to the Drafts folder.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_MAIL_ERROR_SAVE_FAILED</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An underlying operating system error prevented the e-mail draft from being saved</cause>
+                <action>Ensure the device has sufficient free space to save the draft.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16206</number>
+            <text>An error occurred while trying to queue or send the email message.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_MAIL_ERROR_SEND_FAILED</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Network or configuration error.</cause>
+                <action>Verify the device is connected to the network and that at least one e-mail account is properly configured.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16207</number>
+            <text>An unknown error occurred while trying to compose or send an e-mail</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_MAIL_RESULT_UNKNOWN</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Internal error.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16208</number>
+            <text>An unknown error occurred while trying to compose or send a text message</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_MESSAGE_RESULT_UNKNOWN</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Internal error.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16209</number>
+            <text>File not found</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_DISPLAY_FILE_FILE_NOT_FOUND_TITLE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Used as a title for an error when a URL points to a non-existant location.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>    
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16213</number>
+            <text>Calling Invoke Java on another feature is not allowed.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>ACCESS_VIOLATION_MESSAGE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A request was made to invoke Java from a feature using some other feature's ID.  This is not allowed.</cause>
+                <action>The developer needs to either remove the Feature ID from the request or use the feature ID or the background Channel ID.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16214</number>
+            <text>Access violation</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>ACCESS_VIOLATION</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A request was made to invoke Java from a feature using some other feature's ID.  This is not allowed.</cause>
+                <action>The developer needs to either remove the Feature ID from the request or use the feature ID or the background Channel ID.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16215</number>
+            <text>Unable to encrypt password: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_UNABLE_TO_ENCRYPT_PASSWORD</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A problem occurred while attempting to encrypt the generated password.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16216</number>
+            <text>Unable to generate password via hashing: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_UNABLE_TO_GENERATE_PASSWORD</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A problem occurred while attempting to generate a password.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16217</number>
+            <text>Unable to decrypt password: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_UNABLE_TO_DECRYPT_PASSWORD</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A problem occurred while attempting to decrypt the generated password.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16218</number>
+            <text>Invalid parameter key. ParameterKey= %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_INVALID_PARAMETER_KEY</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A problem occurred while iterating through parameter list before persisting them.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16219</number>
+            <text>loginComplete failed with exception: %@</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_LOGIN_COMPLETE_CALL_FAILURE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>A problem occurred in loginComplete.</cause>
+                <action>Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16220</number>
+            <text>Could not determine the return type of class %@ for method %@.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_UNKNOWN_RETURNTYPE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The return type of the method being invoked could not be determined.</cause>
+                <action>Ensure the class name you have provided is valid and has a selector that has a single parameter that returns a supported type.</action>
+            </causes>
+        </message>        
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16221</number>
+            <text>Invalid return type for method %@ in class %@.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ADF_GENERIC_INVOKE_REQUEST_HANDLER_INVALID_RETURNTYPE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>The return type of the method being invoked is not void or an Objective-C object.</cause>
+                <action>Ensure the class name you have provided is valid and has a method that returns either void or an Objective-C object.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16222</number>
+            <text>There was a problem delivering the data change events to feature '%1@' with JSON payload '%2@'.  Return value expected '%3@' but was actually '%4@'.</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_UIWEBVIEW_PRBLM_DELIVERING_DCE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>An unexpected response was received while delivering data change event to a WebView.</cause>
+                <action>During normal use this should not happen. Contact administrator.</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16223</number>
+            <text>No notification ID is specified in arguments</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ERR_LOCAL_NOTIFY_CANCEL_MISSG_ID</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Illegal argument. Notification ID is null or empty.</cause>
+                <action>Pass notification ID that is neither empty nor null</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16224</number>
+            <text>Unable to schedule a local notification, invalid date specified</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ERR_LOCAL_NOTIFY_ADD_INVALID_DATE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Unable to schedule a local notification, invalid date specified</cause>
+                <action>Ensure that date of notification is valid</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16225</number>
+            <text>Unable to schedule a local notification, invalid repeat interval specified</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ERR_LOCAL_NOTIFY_ADD_INVALID_REPEAT</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Unable to schedule a local notification, invalid repeat interval specified</cause>
+                <action>Ensure that repeat interval of notification is valid</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16226</number>
+            <text>Unable to schedule a local notification, invalid badge specified</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ERR_LOCAL_NOTIFY_ADD_INVALID_BADGE</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Unable to schedule a local notification, invalid badge specified</cause>
+                <action>Ensure that badge is a number</action>
+            </causes>
+        </message>
+        <message>
+            <prefix>ADF-MF</prefix>
+            <number>16227</number>
+            <text>Unable to schedule a local notification, invalid sound specified</text>
+            <category>Logging</category>
+            <type>ERROR</type>
+            <level>1</level>
+            <name>PHRASE_KEY_ERR_LOCAL_NOTIFY_ADD_INVALID_SOUND</name>
+            <documented>Yes</documented>
+            <causes>
+                <cause>Unable to schedule a local notification, invalid sound specified</cause>
+                <action>Ensure that sound is set to valid value</action>
+            </causes>
+        </message>
+    </component>
+</messages>

@@ -30,9 +30,12 @@ public class ProjectTaskDC {
             String restURI = ProjectTaskURIs.GetProjectTasksListURI();
             RestCallerUtil rcu = new RestCallerUtil();
             String jsonArrayAsString = rcu.invokeREAD(restURI);
+            System.out.println(">>>>>>>>>>>>>>>>>>>>> ProjectTaskDC.getAllProjectTasks()");
+            System.out.println(jsonArrayAsString);
             ProjectTaskEntity[] projectTasks = JsonArrayToProjectTasksArray.getProjectTasksArray(jsonArrayAsString);
-            allProjectTasks = projectTasks;
-            return new ProjectTaskEntity[0];
+            System.out.println(">>>>>>>>>>>>>>>>>>>>> ProjectTaskDC.getAllProjectTasks()");
+            this.allProjectTasks = projectTasks;
+            return this.allProjectTasks;
         }   
         
         return allProjectTasks;

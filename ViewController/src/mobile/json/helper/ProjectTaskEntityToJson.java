@@ -23,21 +23,21 @@ public class ProjectTaskEntityToJson {
         
         StringBuffer sb = new StringBuffer();
         sb.append("{");
-        if(task.getTaskId()!=null){
+        if(task.getId()!=null){
          sb.append("\"id\":\"");
-         sb.append(task.getTaskId()+"\",");
+         sb.append(task.getId()+"\",");
         }
-        if(task.getTaskName()!=null){
+        if(task.getTask_name()!=null){
          sb.append("\"task_name\":\"");
-         sb.append(task.getTaskName()+"\",");
+         sb.append(task.getTask_name()+"\",");
         }
-        if(task.getProjectName()!=null){
+        if(task.getProject_name()!=null){
          sb.append("\"project_name\":\"");
-         sb.append(task.getProjectName()+"\",");        
+         sb.append(task.getProject_name()+"\",");        
         }
-        if(task.getPercentComplete()!=null){
+        if(task.getPercent_complete()!=null){
          sb.append("\"percent_complete\":\"");
-         sb.append(task.getPercentComplete()+"\",");
+         sb.append(task.getPercent_complete()+"\",");
         }
         sb.deleteCharAt(sb.lastIndexOf(","));
         sb.append("}");
