@@ -2,8 +2,8 @@
 <adfmf:application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf"
                    version="1.0" name="PPM Cloud Mobile" id="com.company.PPMMobile"
                    appControllerFolder="ApplicationController" listener-class="application.LifeCycleListenerImpl">
-  <adfmf:featureReference refId="todoTasksFeature" id="fr1" showOnNavigationBar="false"/>
   <adfmf:featureReference refId="ProjectTasksFeature" id="fr2"/>
+  <adfmf:featureReference refId="TodoTasksFeature" id="fr1"/>
   <adfmf:preferences/>
   <adfmf:navigation>
     <adfmf:navigationBar enabled="false"/>

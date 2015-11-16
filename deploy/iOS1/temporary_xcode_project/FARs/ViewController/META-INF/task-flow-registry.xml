@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <task-flow-registry xmlns="http://xmlns.oracle.com/adf/controller/rc">
-   <task-flow-descriptor path="todoTasksFeature/todoTasksFeature-task-flow.xml" id="todoTasksFeature-task-flow" type="task-flow-definition" uses-page-fragments="false" library-internal="false" remote-invocable="false" train="false" critical="false" page-type="unspecified"/>
+   <task-flow-descriptor path="TodoTasksFeature/TodoTasksFeature-task-flow.xml" id="TodoTasksFeature-task-flow" type="task-flow-definition" uses-page-fragments="false" library-internal="false" remote-invocable="false" train="false" critical="false" page-type="unspecified"/>
    <task-flow-descriptor path="ProjectTasksFeature/ProjectTasksFeature-task-flow.xml" id="ProjectTasksFeature-task-flow" type="task-flow-definition" uses-page-fragments="false" library-internal="false" remote-invocable="false" train="false" critical="false" page-type="unspecified"/>
 </task-flow-registry>

@@ -5,31 +5,50 @@
     <amx:facet name="header">
       <amx:outputText value="Todo Tasks" id="ot1"/>
     </amx:facet>
-    <amx:listView var="row" value="#{bindings.sampleTasks.collectionModel}"
-                  fetchSize="#{bindings.sampleTasks.rangeSize}"
-                  selectedRowKeys="#{bindings.sampleTasks.collectionModel.selectedRow}"
-                  initialScrollRowKeys="#{bindings.sampleTasks.collectionModel.selectedRow}"
-                  selectionListener="#{bindings.sampleTasks.collectionModel.makeCurrent}" showMoreStrategy="autoScroll"
-                  bufferStrategy="viewport" id="lv1">
-      <amx:listItem id="li1">
-        <amx:tableLayout width="100%" id="tl1">
-          <amx:rowLayout id="rl2">
-            <amx:cellFormat width="40px" halign="center" rowSpan="2" id="cf2">
-              <amx:commandButton id="cb1" inlineStyle="background-image:none;" icon="assets/icon-done.png"/>
-            </amx:cellFormat>
-            <amx:cellFormat width="100%" height="#{deviceScope.device.os=='Android'?'36':'32'}px" id="cf3">
-              <amx:outputText value="#{row.taskName}" id="ot3"/>
-            </amx:cellFormat>
-          </amx:rowLayout>
-          <amx:rowLayout id="rl1">
-            <amx:cellFormat width="100%" height="#{deviceScope.device.os=='Android'?'22':'19'}px" id="cf1">
-              <amx:outputText value="#{row.startDate}" styleClass="adfmf-listItem-captionText" id="ot2">
-                <amx:convertDateTime pattern="#{bindings.sampleTasks.hints.startDate.format}" id="cdt1"/>
-              </amx:outputText>
-            </amx:cellFormat>
-          </amx:rowLayout>
-        </amx:tableLayout>
-      </amx:listItem>
-    </amx:listView>
+    <amx:facet name="primary">
+      <amx:commandButton id="cb1"/>
+    </amx:facet>
+    <amx:facet name="secondary">
+      <amx:commandButton id="cb2"/>
+    </amx:facet>
+    <amx:refreshContainer id="rc2">
+      <amx:listView var="row" value="#{bindings.allTodoTasks.collectionModel}"
+                    fetchSize="#{bindings.allTodoTasks.rangeSize}"
+                    selectedRowKeys="#{bindings.allTodoTasks.collectionModel.selectedRow}"
+                    initialScrollRowKeys="#{bindings.allTodoTasks.collectionModel.selectedRow}"
+                    selectionListener="#{bindings.allTodoTasks.collectionModel.makeCurrent}"
+                    showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv1">
+        <amx:listItem id="li1">
+          <amx:tableLayout width="100%" id="tl1">
+            <amx:rowLayout id="rl2">
+              <amx:cellFormat width="40px" halign="center" rowSpan="2" id="cf5">
+                <amx:commandButton id="cb10" inlineStyle="background-image:none;" icon="assets/icon-done.png"/>
+              </amx:cellFormat>
+              <amx:cellFormat width="60%" height="#{deviceScope.device.os=='Android'?'36':'32'}px" id="cf3">
+                <amx:outputText value="#{row.task_name}" id="ot4"/>
+              </amx:cellFormat>
+              <amx:cellFormat width="10px" rowSpan="2" id="cf6"/>
+              <amx:cellFormat width="40%" halign="end" id="cf4">
+                
+                
+                
+              </amx:cellFormat>
+            </amx:rowLayout>
+            <amx:rowLayout id="rl1">
+              <amx:cellFormat width="60%" height="#{deviceScope.device.os=='Android'?'22':'19'}px" id="cf1">
+                <amx:outputText value="#{row.start_date}" styleClass="adfmf-listItem-captionText" id="ot2">
+                  <amx:convertDateTime pattern="#{bindings.allTodoTasks.hints.start_date.format}" id="cdt1"/>
+                </amx:outputText>
+              </amx:cellFormat>
+              <amx:cellFormat width="40%" halign="end" id="cf2">
+                <amx:outputText value="#{row.finish_date}" styleClass="adfmf-listItem-captionText" id="ot3">
+                  <amx:convertDateTime pattern="#{bindings.allTodoTasks.hints.finish_date.format}" id="cdt2"/>
+                </amx:outputText>
+              </amx:cellFormat>
+            </amx:rowLayout>
+          </amx:tableLayout>
+        </amx:listItem>
+      </amx:listView>
+    </amx:refreshContainer>
   </amx:panelPage>
 </amx:view>

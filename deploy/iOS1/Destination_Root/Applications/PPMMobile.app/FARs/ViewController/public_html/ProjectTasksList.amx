@@ -19,6 +19,7 @@
                     selectionListener="#{bindings.allProjectTasks.collectionModel.makeCurrent}"
                     showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv1">
         <amx:listItem id="li1">
+          <?audit suppress oracle.maf.warning-missing-shortDesc?>
           <amx:tableLayout width="100%" id="tl1">
             <amx:rowLayout id="rl1">
               <amx:cellFormat width="40px" halign="center" rowSpan="2" id="cf3">

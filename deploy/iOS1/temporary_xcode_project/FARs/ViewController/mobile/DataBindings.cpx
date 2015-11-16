@@ -2,15 +2,15 @@
 <Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.3.2.1" id="DataBindings"
              SeparateXMLFiles="false" Package="mobile" ClientType="Generic">
   <pageMap>
-    <page path="/todoTasksList.amx" usageId="mobile_todoTasksListPageDef"/>
     <page path="/ProjectTasksList.amx" usageId="mobile_ProjectTasksListPageDef"/>
+    <page path="/TodoTasksList.amx" usageId="mobile_todoTasksListPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
-    <page id="mobile_todoTasksListPageDef" path="mobile.pageDefs.todoTasksListPageDef"/>
     <page id="mobile_ProjectTasksListPageDef" path="mobile.pageDefs.ProjectTasksListPageDef"/>
+    <page id="mobile_todoTasksListPageDef" path="mobile.pageDefs.todoTasksListPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
+    <dc id="TodoTaskDC" path="mobile.TodoTaskDC"/>
     <dc id="ProjectTaskDC" path="mobile.ProjectTaskDC"/>
-    <dc id="TodoTasks" path="mobile.TodoTasks"/>
   </dataControlUsages>
 </Application>
