@@ -40,6 +40,18 @@ public class TodoTaskDC {
         return allTodoTasks;
     }
     
+    public void refreshList(){
+        String restURI = TodoTaskURIs.GetTodoTasksListURI();
+        RestCallerUtil rcu = new RestCallerUtil();
+        String jsonArrayAsString = rcu.invokeREAD(restURI);
+        System.out.println(">>>>>>>>>>>>>>>>>>>>> TodoTaskDC.getAllTodoTasks()");
+        System.out.println(jsonArrayAsString);
+        TodoTaskEntity[] todoTasks = JsonArrayToTodoTasksArray.getTodoTasksArray(jsonArrayAsString);
+        System.out.println(">>>>>>>>>>>>>>>>>>>>> TodoTaskDC.getAllTodoTasks()");
+        this.allTodoTasks = todoTasks;
+        providerChangeSupport.fireProviderRefresh("allTodoTasks");
+    }
+    
     protected transient ProviderChangeSupport providerChangeSupport = new ProviderChangeSupport(this);
 
     public void addProviderChangeListener(ProviderChangeListener l) {

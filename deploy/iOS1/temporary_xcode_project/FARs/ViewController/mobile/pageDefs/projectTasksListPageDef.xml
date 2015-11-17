@@ -22,5 +22,8 @@
         </AttrNames>
       </nodeDefinition>
     </tree>
+    <methodAction id="refreshProjectTaskList" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="refreshProjectTaskList" IsViewObjectMethod="false" DataControl="ProjectTaskDC"
+                  InstanceName="data.ProjectTaskDC.dataProvider"/>
   </bindings>
 </pageDefinition>

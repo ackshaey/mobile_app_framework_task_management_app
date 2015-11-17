@@ -11,7 +11,8 @@
     <amx:facet name="secondary">
       <amx:commandButton id="cb2"/>
     </amx:facet>
-    <amx:refreshContainer id="rc1">
+    <amx:refreshContainer id="rc12" pullText="Pull To Refresh" busyText="Refreshing ..."
+                          action="#(bindings.refreshProjectTaskList.execute}">
       <amx:listView var="row" value="#{bindings.allProjectTasks.collectionModel}"
                     fetchSize="#{bindings.allProjectTasks.rangeSize}"
                     selectedRowKeys="#{bindings.allProjectTasks.collectionModel.selectedRow}"
