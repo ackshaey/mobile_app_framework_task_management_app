@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1" id="TodoTaskDetailsPageDef"
+                Package="mobile.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="TodoTaskDC" id="TodoTaskDCIterator"/>
+    <accessorIterator MasterBinding="TodoTaskDCIterator" Binds="allTodoTasks" RangeSize="25" DataControl="TodoTaskDC"
+                      BeanClass="mobile.entities.TodoTaskEntity" id="allTodoTasksIterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="allTodoTasksIterator" id="task_name">
+      <AttrNames>
+        <Item Value="task_name"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="allTodoTasksIterator" id="project_name">
+      <AttrNames>
+        <Item Value="project_name"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="allTodoTasksIterator" id="percent_complete">
+      <AttrNames>
+        <Item Value="percent_complete"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="allTodoTasksIterator" id="start_date">
+      <AttrNames>
+        <Item Value="start_date"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="allTodoTasksIterator" id="finish_date">
+      <AttrNames>
+        <Item Value="finish_date"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

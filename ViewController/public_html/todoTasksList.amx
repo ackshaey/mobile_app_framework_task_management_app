@@ -19,7 +19,7 @@
                     initialScrollRowKeys="#{bindings.allTodoTasks.collectionModel.selectedRow}"
                     selectionListener="#{bindings.allTodoTasks.collectionModel.makeCurrent}"
                     showMoreStrategy="autoScroll" bufferStrategy="viewport" id="lv1">
-        <amx:listItem id="li1">
+        <amx:listItem id="li1" action="navigateToDetails">
           <amx:tableLayout width="100%" id="tl1">
             <amx:rowLayout id="rl2">
               <amx:cellFormat width="40px" halign="center" rowSpan="2" id="cf5">
@@ -48,6 +48,7 @@
               </amx:cellFormat>
             </amx:rowLayout>
           </amx:tableLayout>
+          <amx:setPropertyListener id="spl1" from="#{row.id}" to="#{pageFlowScope.selectedTodoTaskId}" type="action"/>
         </amx:listItem>
       </amx:listView>
     </amx:refreshContainer>

@@ -4,10 +4,16 @@
   <pageMap>
     <page path="/ProjectTasksList.amx" usageId="mobile_ProjectTasksListPageDef"/>
     <page path="/TodoTasksList.amx" usageId="mobile_todoTasksListPageDef"/>
+    <page path="/TodoTasksFeature/TodoTasksFeature-task-flow.xml#TodoTasksFeature-task-flow@prepareTodoTasksForDetails"
+          usageId="mobile_TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"/>
+    <page path="/TodoTaskDetails.amx" usageId="mobile_TodoTaskDetailsPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="mobile_ProjectTasksListPageDef" path="mobile.pageDefs.ProjectTasksListPageDef"/>
     <page id="mobile_todoTasksListPageDef" path="mobile.pageDefs.todoTasksListPageDef"/>
+    <page id="mobile_TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"
+          path="TodoTasksFeature.TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"/>
+    <page id="mobile_TodoTaskDetailsPageDef" path="mobile.pageDefs.TodoTaskDetailsPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <dc id="TodoTaskDC" path="mobile.TodoTaskDC"/>
