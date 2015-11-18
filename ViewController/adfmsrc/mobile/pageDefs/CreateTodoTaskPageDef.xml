@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1" id="CreateTodoTaskPageDef"
+                Package="mobile.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables">
+      <variable Type="java.lang.String" Name="createTodoTask_taskName" IsQueriable="false"/>
+    </variableIterator>
+  </executables>
+  <bindings>
+    <methodAction id="createTodoTask" RequiresUpdateModel="true" Action="invokeMethod" MethodName="createTodoTask"
+                  IsViewObjectMethod="false" DataControl="TodoTaskDC" InstanceName="data.TodoTaskDC.dataProvider">
+      <NamedData NDName="taskName" NDType="java.lang.String" NDValue="${bindings.createTodoTask_taskName}"/>
+    </methodAction>
+    <attributeValues IterBinding="variables" id="taskName">
+      <AttrNames>
+        <Item Value="createTodoTask_taskName"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

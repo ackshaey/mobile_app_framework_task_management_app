@@ -77,4 +77,39 @@
       <property
          name="sdm:polyPoints">L50,562.0,510.53516,293.0,320.73438,B50</property>
    </ControlFlowCase>
+   <View
+      id="View8">
+      <property
+         name="activityId">CreateTodoTask</property>
+      <property
+         name="page">/CreateTodoTask.amx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>CreateTodoTask&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">20.402344</property>
+      <property
+         name="x">610.0</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase9"
+      from="View2"
+      to="View8">
+      <property
+         name="fromOutcome">createTodoTask</property>
+      <property
+         name="sdm:polyPoints">T50,293.0,212.73438,569.0,20.335938,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase10"
+      from="View8"
+      to="View2">
+      <property
+         name="fromOutcome">backToList</property>
+      <property
+         name="sdm:polyPoints">L54,569.0,23.835938,296.5,212.73438,T56</property>
+   </ControlFlowCase>
 </SDM>

@@ -21,18 +21,18 @@ public class RestCallerUtil {
     //POST
     public String invokeUPDATE(String requestURI, String payload){
         
-        return this.invokeRestRequest(RestServiceAdapter.REQUEST_TYPE_POST, requestURI, payload);
+        return this.invokeRestRequest(RestServiceAdapter.REQUEST_TYPE_PUT, requestURI, payload);
     }
     
     //PUT
     public String invokeCREATE(String requestURI, String payload){
-        return this.invokeRestRequest(RestServiceAdapter.REQUEST_TYPE_PUT, requestURI, payload);
+        return this.invokeRestRequest(RestServiceAdapter.REQUEST_TYPE_POST, requestURI, payload);
     }
     
     
     //DELETE
     public String invokeDELETE(String requestURI){
-        return this.invokeRestRequest(RestServiceAdapter.REQUEST_TYPE_POST, requestURI, "");
+        return this.invokeRestRequest(RestServiceAdapter.REQUEST_TYPE_DELETE, requestURI, "");
     }
     
     /**

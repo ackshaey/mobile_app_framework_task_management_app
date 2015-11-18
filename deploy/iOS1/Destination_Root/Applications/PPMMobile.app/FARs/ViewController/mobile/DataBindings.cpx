@@ -7,6 +7,7 @@
     <page path="/TodoTasksFeature/TodoTasksFeature-task-flow.xml#TodoTasksFeature-task-flow@prepareTodoTasksForDetails"
           usageId="mobile_TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"/>
     <page path="/TodoTaskDetails.amx" usageId="mobile_TodoTaskDetailsPageDef"/>
+    <page path="/CreateTodoTask.amx" usageId="mobile_CreateTodoTaskPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="mobile_ProjectTasksListPageDef" path="mobile.pageDefs.ProjectTasksListPageDef"/>
@@ -14,6 +15,7 @@
     <page id="mobile_TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"
           path="TodoTasksFeature.TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"/>
     <page id="mobile_TodoTaskDetailsPageDef" path="mobile.pageDefs.TodoTaskDetailsPageDef"/>
+    <page id="mobile_CreateTodoTaskPageDef" path="mobile.pageDefs.CreateTodoTaskPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <dc id="TodoTaskDC" path="mobile.TodoTaskDC"/>

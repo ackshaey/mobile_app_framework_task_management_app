@@ -89,8 +89,19 @@ public class TodoTaskDC {
         this.allTodoTasks = task;        
         providerChangeSupport.fireProviderRefresh("allTodoTasks");       
     };
-
     
+    /**
+     * Fires a simple create task post request
+     * @param taskName
+     */
+    public void createTodoTask(String taskName){
+      String restURI = TodoTaskURIs.PostTodoTasksURI();
+      String restPostBody = "{\"task_name\": \""+taskName+"\"}";
+      RestCallerUtil rcu = new RestCallerUtil();
+      rcu.invokeCREATE(restURI, restPostBody);
+      refreshList();
+    }
+
     protected transient ProviderChangeSupport providerChangeSupport = new ProviderChangeSupport(this);
 
     public void addProviderChangeListener(ProviderChangeListener l) {

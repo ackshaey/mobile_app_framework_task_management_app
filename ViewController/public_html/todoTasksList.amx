@@ -9,7 +9,7 @@
       <amx:commandButton id="cb1"/>
     </amx:facet>
     <amx:facet name="secondary">
-      <amx:commandButton id="cb2"/>
+      <amx:commandButton id="cb2" action="createTodoTask" icon="assets/icon_newtask.png" iconPosition="trailing"/>
     </amx:facet>
     <amx:refreshContainer id="rc2" pullText="Pull To Refresh" busyText="Refreshing ..."
                           action="#{bindings.refreshList.execute}">

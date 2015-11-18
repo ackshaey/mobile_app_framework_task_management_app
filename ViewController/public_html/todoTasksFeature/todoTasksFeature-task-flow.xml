@@ -14,11 +14,18 @@
     <view id="TodoTaskDetails">
       <page>/TodoTaskDetails.amx</page>
     </view>
+    <view id="CreateTodoTask">
+      <page>/CreateTodoTask.amx</page>
+    </view>
     <control-flow-rule id="__1">
       <from-activity-id>TodoTasksList</from-activity-id>
       <control-flow-case id="__2">
         <from-outcome>navigateToDetails</from-outcome>
         <to-activity-id>prepareTodoTasksForDetails</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__7">
+        <from-outcome>createTodoTask</from-outcome>
+        <to-activity-id>CreateTodoTask</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <control-flow-rule id="__3">
@@ -32,6 +39,13 @@
       <from-activity-id>TodoTaskDetails</from-activity-id>
       <control-flow-case id="__6">
         <from-outcome>navigateToList</from-outcome>
+        <to-activity-id>TodoTasksList</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__8">
+      <from-activity-id>CreateTodoTask</from-activity-id>
+      <control-flow-case id="__9">
+        <from-outcome>backToList</from-outcome>
         <to-activity-id>TodoTasksList</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
