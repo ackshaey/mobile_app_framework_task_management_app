@@ -5,18 +5,111 @@
    <View
       id="View2">
       <property
-         name="activityId">todoTasksList</property>
+         name="activityId">TodoTasksList</property>
       <property
-         name="page">/todoTasksList.amx</property>
+         name="page">/TodoTasksList.amx</property>
       <property
          name="start">true</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>todoTasksList&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>TodoTasksList&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="exceptionHandler">false</property>
       <property
-         name="y">253.80078</property>
+         name="y">266.80078</property>
       <property
-         name="x">502.0</property>
+         name="x">293.0</property>
    </View>
+   <MethodCall
+      id="MethodCall3">
+      <property
+         name="activityId">prepareTodoTasksForDetails</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>prepareTodoTasksForDetails&lt;/b>&lt;/p>&lt;p>Activity Type:  Method Call&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">264.16797</property>
+      <property
+         name="x">603.41406</property>
+   </MethodCall>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="View2"
+      to="MethodCall3">
+      <property
+         name="fromOutcome">navigateToDetails</property>
+      <property
+         name="sdm:polyPoints">R50,334.0,266.73438,562.41406,264.10156,L50</property>
+   </ControlFlowCase>
+   <View
+      id="View5">
+      <property
+         name="activityId">TodoTaskDetails</property>
+      <property
+         name="page">/TodoTaskDetails.amx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>TodoTaskDetails&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">510.60156</property>
+      <property
+         name="x">603.0</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase6"
+      from="MethodCall3"
+      to="View5">
+      <property
+         name="fromOutcome">prepareTodoTasksForDetails</property>
+      <property
+         name="sdm:polyPoints">B50,603.41406,318.10156,603.0,456.53516,T50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="View5"
+      to="View2">
+      <property
+         name="fromOutcome">navigateToList</property>
+      <property
+         name="sdm:polyPoints">L50,562.0,510.53516,293.0,320.73438,B50</property>
+   </ControlFlowCase>
+   <View
+      id="View8">
+      <property
+         name="activityId">CreateTodoTask</property>
+      <property
+         name="page">/CreateTodoTask.amx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>CreateTodoTask&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">20.402344</property>
+      <property
+         name="x">610.0</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase9"
+      from="View2"
+      to="View8">
+      <property
+         name="fromOutcome">createTodoTask</property>
+      <property
+         name="sdm:polyPoints">T50,293.0,212.73438,569.0,20.335938,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase10"
+      from="View8"
+      to="View2">
+      <property
+         name="fromOutcome">backToList</property>
+      <property
+         name="sdm:polyPoints">L54,569.0,23.835938,296.5,212.73438,T56</property>
+   </ControlFlowCase>
 </SDM>

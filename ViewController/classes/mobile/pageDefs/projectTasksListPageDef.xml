@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1" id="projectTasksListPageDef"
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1" id="ProjectTasksListPageDef"
                 Package="mobile.pageDefs">
   <parameters/>
   <executables>
     <variableIterator id="variables"/>
-    <iterator Binds="root" RangeSize="25" DataControl="TodoTasks" id="TodoTasksIterator"/>
-    <accessorIterator MasterBinding="TodoTasksIterator" Binds="sampleTasks" RangeSize="25" DataControl="TodoTasks"
-                      BeanClass="mobile.TodoTask" id="sampleTasksIterator"/>
+    <iterator Binds="root" RangeSize="25" DataControl="ProjectTaskDC" id="ProjectTaskDCIterator"/>
+    <accessorIterator MasterBinding="ProjectTaskDCIterator" Binds="allProjectTasks" RangeSize="25"
+                      DataControl="ProjectTaskDC" BeanClass="mobile.entities.ProjectTaskEntity"
+                      id="allProjectTasksIterator"/>
   </executables>
   <bindings>
-    <tree IterBinding="sampleTasksIterator" id="sampleTasks">
-      <nodeDefinition DefName="mobile.TodoTask" Name="sampleTasks0">
+    <tree IterBinding="allProjectTasksIterator" id="allProjectTasks">
+      <nodeDefinition DefName="mobile.entities.ProjectTaskEntity" Name="allProjectTasks0">
         <AttrNames>
-          <Item Value="taskName"/>
-          <Item Value="startDate"/>
-          <Item Value="project"/>
-          <Item Value="finishDate"/>
-          <Item Value="percentComplete"/>
+          <Item Value="id"/>
+          <Item Value="task_name"/>
+          <Item Value="project_name"/>
+          <Item Value="percent_complete"/>
+          <Item Value="start_date"/>
+          <Item Value="finish_date"/>
         </AttrNames>
       </nodeDefinition>
     </tree>
+    <methodAction id="refreshProjectTaskList" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="refreshProjectTaskList" IsViewObjectMethod="false" DataControl="ProjectTaskDC"
+                  InstanceName="data.ProjectTaskDC.dataProvider"/>
   </bindings>
 </pageDefinition>

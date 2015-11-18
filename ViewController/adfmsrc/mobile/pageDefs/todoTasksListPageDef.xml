@@ -4,19 +4,22 @@
   <parameters/>
   <executables>
     <variableIterator id="variables"/>
-    <iterator Binds="root" RangeSize="25" DataControl="TodoTasks" id="TodoTasksIterator"/>
-    <accessorIterator MasterBinding="TodoTasksIterator" Binds="sampleTasks" RangeSize="25" DataControl="TodoTasks"
-                      BeanClass="mobile.TodoTask" id="sampleTasksIterator"/>
+    <iterator Binds="root" RangeSize="25" DataControl="TodoTaskDC" id="TodoTaskDCIterator"/>
+    <accessorIterator MasterBinding="TodoTaskDCIterator" Binds="allTodoTasks" RangeSize="25" DataControl="TodoTaskDC"
+                      BeanClass="mobile.entities.TodoTaskEntity" id="allTodoTasksIterator"/>
   </executables>
   <bindings>
-    <tree IterBinding="sampleTasksIterator" id="sampleTasks">
-      <nodeDefinition DefName="mobile.TodoTask" Name="sampleTasks0">
+    <tree IterBinding="allTodoTasksIterator" id="allTodoTasks">
+      <nodeDefinition DefName="mobile.entities.TodoTaskEntity" Name="allTodoTasks0">
         <AttrNames>
-          <Item Value="taskName"/>
-          <Item Value="startDate"/>
-          <Item Value="percentComplete"/>
+          <Item Value="task_name"/>
+          <Item Value="id"/>
+          <Item Value="start_date"/>
+          <Item Value="finish_date"/>
         </AttrNames>
       </nodeDefinition>
     </tree>
+    <methodAction id="refreshList" RequiresUpdateModel="true" Action="invokeMethod" MethodName="refreshList"
+                  IsViewObjectMethod="false" DataControl="TodoTaskDC" InstanceName="data.TodoTaskDC.dataProvider"/>
   </bindings>
 </pageDefinition>

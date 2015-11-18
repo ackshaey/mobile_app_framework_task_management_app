@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<amx:view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amx="http://xmlns.oracle.com/adf/mf/amx"
+          xmlns:dvtm="http://xmlns.oracle.com/adf/mf/amx/dvt">
+  <amx:panelPage id="pp1">
+    <amx:facet name="header">
+      <amx:outputText value="Task Details" id="ot1"/>
+    </amx:facet>
+    <amx:facet name="primary">
+      <amx:commandButton id="cb1" rendered="true" text="Back" action="__back"/>
+    </amx:facet>
+    <amx:facet name="secondary">
+      <amx:commandButton id="cb2"/>
+    </amx:facet>
+    <amx:panelFormLayout id="pfl1">
+      <amx:panelLabelAndMessage label="Name" id="plam2">
+        <amx:outputText value="#{bindings.task_name.inputValue}" id="ot3"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelLabelAndMessage label="Project" id="plam3">
+        <amx:outputText value="#{bindings.project_name.inputValue}" id="ot4"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelLabelAndMessage label="Percent Complete" id="plam1">
+        <amx:outputText value="#{bindings.percent_complete.inputValue}" id="ot2"/>
+      </amx:panelLabelAndMessage>
+      <amx:panelLabelAndMessage label="Start Date" id="plam5">
+        <amx:outputText value="#{bindings.start_date.inputValue}" id="ot6">
+          <amx:convertDateTime pattern="#{bindings.start_date.format}" id="cdt2"/>
+        </amx:outputText>
+      </amx:panelLabelAndMessage>
+      <amx:panelLabelAndMessage label="Finish Date" id="plam4">
+        <amx:outputText value="#{bindings.finish_date.inputValue}" id="ot5">
+          <amx:convertDateTime pattern="#{bindings.finish_date.format}" id="cdt1"/>
+        </amx:outputText>
+      </amx:panelLabelAndMessage>
+    </amx:panelFormLayout>
+  </amx:panelPage>
+</amx:view>

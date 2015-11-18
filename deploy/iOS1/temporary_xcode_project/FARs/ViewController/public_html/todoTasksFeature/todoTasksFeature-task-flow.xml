@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="US-ASCII" ?>
 <adfc-mobile-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.0">
-  <task-flow-definition id="todoTasksFeature-task-flow">
-    <default-activity>todoTasksList</default-activity>
-    <view id="todoTasksList">
-      <page>/todoTasksList.amx</page>
+  <task-flow-definition id="TodoTasksFeature-task-flow">
+    <default-activity>TodoTasksList</default-activity>
+    <view id="TodoTasksList">
+      <page>/TodoTasksList.amx</page>
     </view>
+    <method-call id="prepareTodoTasksForDetails">
+      <method>#{bindings.prepareTodoTasksForDetails.execute}</method>
+      <outcome>
+        <fixed-outcome>prepareTodoTasksForDetails</fixed-outcome>
+      </outcome>
+    </method-call>
+    <view id="TodoTaskDetails">
+      <page>/TodoTaskDetails.amx</page>
+    </view>
+    <view id="CreateTodoTask">
+      <page>/CreateTodoTask.amx</page>
+    </view>
+    <control-flow-rule id="__1">
+      <from-activity-id>TodoTasksList</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>navigateToDetails</from-outcome>
+        <to-activity-id>prepareTodoTasksForDetails</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__7">
+        <from-outcome>createTodoTask</from-outcome>
+        <to-activity-id>CreateTodoTask</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__3">
+      <from-activity-id>prepareTodoTasksForDetails</from-activity-id>
+      <control-flow-case id="__4">
+        <from-outcome>prepareTodoTasksForDetails</from-outcome>
+        <to-activity-id>TodoTaskDetails</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__5">
+      <from-activity-id>TodoTaskDetails</from-activity-id>
+      <control-flow-case id="__6">
+        <from-outcome>navigateToList</from-outcome>
+        <to-activity-id>TodoTasksList</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__8">
+      <from-activity-id>CreateTodoTask</from-activity-id>
+      <control-flow-case id="__9">
+        <from-outcome>backToList</from-outcome>
+        <to-activity-id>TodoTasksList</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
     <page-flow-scope-behavior>
       <push-new/>
     </page-flow-scope-behavior>

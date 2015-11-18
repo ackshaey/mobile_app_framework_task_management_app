@@ -39,4 +39,14 @@
       </XmlRefAddr>
     </RefAddresses>
   </Reference>
+  <Reference name="PpmRailsApiConn" className="oracle.adf.model.connection.rest.RestConnection" xmlns="">
+    <Factory className="oracle.adf.model.connection.rest.RestConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="PpmRailsApiConn">
+        <Contents>
+          <restconnection name="PpmRailsApiConn" url="http://ppm-rest-api.herokuapp.com/api"/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
 </References>

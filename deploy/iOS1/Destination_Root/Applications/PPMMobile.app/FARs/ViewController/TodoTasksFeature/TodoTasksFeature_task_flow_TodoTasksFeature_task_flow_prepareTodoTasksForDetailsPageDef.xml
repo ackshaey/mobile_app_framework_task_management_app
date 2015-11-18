@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.2.1"
+                id="TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"
+                Package="TodoTasksFeature" SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <methodAction id="prepareTodoTasksForDetails" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="prepareTodoTasksForDetails" IsViewObjectMethod="false" DataControl="TodoTaskDC"
+                  InstanceName="data.TodoTaskDC.dataProvider">
+      <NamedData NDName="id" NDValue="#{pageFlowScope.selectedTodoTaskId}" NDType="java.lang.Integer"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

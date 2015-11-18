@@ -2,16 +2,23 @@
 <Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.3.2.1" id="DataBindings"
              SeparateXMLFiles="false" Package="mobile" ClientType="Generic">
   <pageMap>
-    <page path="/TodoList.amx" usageId="mobile_TodoListPageDef"/>
-    <page path="/projectTasksList.amx" usageId="mobile_projectTasksListPageDef"/>
-    <page path="/todoTasksList.amx" usageId="mobile_todoTasksListPageDef"/>
+    <page path="/ProjectTasksList.amx" usageId="mobile_ProjectTasksListPageDef"/>
+    <page path="/TodoTasksList.amx" usageId="mobile_todoTasksListPageDef"/>
+    <page path="/TodoTasksFeature/TodoTasksFeature-task-flow.xml#TodoTasksFeature-task-flow@prepareTodoTasksForDetails"
+          usageId="mobile_TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"/>
+    <page path="/TodoTaskDetails.amx" usageId="mobile_TodoTaskDetailsPageDef"/>
+    <page path="/CreateTodoTask.amx" usageId="mobile_CreateTodoTaskPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
-    <page id="mobile_TodoListPageDef" path="mobile.pageDefs.TodoListPageDef"/>
-    <page id="mobile_projectTasksListPageDef" path="mobile.pageDefs.projectTasksListPageDef"/>
+    <page id="mobile_ProjectTasksListPageDef" path="mobile.pageDefs.ProjectTasksListPageDef"/>
     <page id="mobile_todoTasksListPageDef" path="mobile.pageDefs.todoTasksListPageDef"/>
+    <page id="mobile_TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"
+          path="TodoTasksFeature.TodoTasksFeature_task_flow_TodoTasksFeature_task_flow_prepareTodoTasksForDetailsPageDef"/>
+    <page id="mobile_TodoTaskDetailsPageDef" path="mobile.pageDefs.TodoTaskDetailsPageDef"/>
+    <page id="mobile_CreateTodoTaskPageDef" path="mobile.pageDefs.CreateTodoTaskPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
-    <dc id="TodoTasks" path="mobile.TodoTasks"/>
+    <dc id="TodoTaskDC" path="mobile.TodoTaskDC"/>
+    <dc id="ProjectTaskDC" path="mobile.ProjectTaskDC"/>
   </dataControlUsages>
 </Application>
